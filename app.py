@@ -29,7 +29,7 @@ model = load_flower_model()
 class_names = ["daisy", "dandelion", "rose", "sunflower", "tulip"]
 
 st.title("🌸 Flower Classification App")
-st.write("Upload gambar bunga, dan model MobileNetV2 akan memprediksi jenis bunganya.")
+st.write("Masukkan gambar bunga, dan model MobileNetV2 akan memprediksi jenis bunganya.")
 
  
 uploaded_file = st.file_uploader("Pilih gambar bunga...", type=["jpg", "jpeg", "png"])
