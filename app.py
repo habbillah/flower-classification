@@ -1,6 +1,5 @@
 import streamlit as st
 import numpy as np
-import tensorflow as tf
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 from PIL import Image
@@ -14,7 +13,7 @@ def load_flower_model():
     model_path = "flower_classification_model_sequential.h5"
     try:
         
-        model = tf.keras.models.load_model(model_path, compile=False)
+        model = load_model(model_path, compile=False)
         st.success("✅ Model loaded successfully!")
         return model
     except Exception as e:
